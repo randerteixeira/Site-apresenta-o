@@ -1,0 +1,35 @@
+.container{
+    cursor:crosshair;
+    
+    background-image: url('index3.png');
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+@keyframes fa-blink {
+    0% { opacity: 0; }
+    
+    100% { opacity: 1; }
+}
+button{
+   position: absolute;
+   top: 500px;
+   left: 200px;
+   width: 200px;
+   height: 100px;
+   background-color: green;
+   color: aliceblue;
+   border-radius: 30px;
+   font-size: 25px;
+   border: none;
+   outline: none;
+  
+   animation: fa-blink 5s ;
+}
+button:hover{
+    background-color: aqua;
+    color: blue;
+}

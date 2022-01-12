@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+	<style>
+	@keyframes pisca {
+    0% { opacity: 0.3; }
+    50%{ opacity:0.5};
+    100% { opacity: 1; }
+}
+	.pisca{
+	width:100%;
+	height:100%;
+	background-image:url('joia.png');
+	background-size:cover;
+	background-position:center;
+	animation:pisca 2s infinite;
+	}
+	
+	</style>
+</head>
+<body>
+<div class="pisca">
+
+
+</div>
+</body>
+<script>
+setTimeout(function() {
+    window.location.href="inicial.html";
+}, 5000);
+
+</script>
+</html>

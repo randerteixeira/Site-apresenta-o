@@ -1,11 +1,19 @@
+/*animacao*/
+
+
+
 body{
-    max-width: 1000px;
+    
     margin: auto;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
     
 }
 header{
-    background-color: blueviolet;
+    background-color: #3232CD;
     color: white;
+    margin: 0;
 }
 .cabecalho{
     font-size: 25px;
@@ -24,26 +32,241 @@ header{
 }
 .menu li:hover{
     background-color: white;
-    color: blueviolet;
+    color:  #3232CD;
     
 }
-section{
+.banner{
     display: flex;
     height: 400px;
     
-    color: blueviolet;
+    color: #3232CD;
     background-image: url('fundo.jpg');
     background-position: center;
     background-size: cover;
     justify-content: center;
-align-items: center;
+    align-items: center;
+    margin-top: -15px;
+   
 }
 .logo{
     padding: 20px;
+    width: 30%;
 
 }
+.espaco{
+    width:100vw;
+    height: 400px;
+  
+}
 .apresentacao{
+    width: 70%;
     text-align: center;
     padding: 20px;
+    font-size: 20px;
+}
+.services{
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    transition: all ease 2s;
+    margin-left: 2500px;
+
+    
+}
+.servico{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    background-color: rgba(120, 138, 241, 0.295);
+    border-radius: 10px;
+    border-top:1px solid  rgba(255, 255, 255, 0.76) ;
+
+}
+.servico:hover{
+background-color: rgba(120, 138, 241, 0.400);
+
+}
+.image{
+    width: 100px;
+    height: 100px;
+    
+    border-radius:50px ;
+    
+}
+.image img{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+.text p{
+    color: #4d4dc4d5;
+}
+.text h1{
+    color: #3232CD;
+}
+.telas{
+    background-image: url('fundo.png');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+
+}
+
+.imgEstr{
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    
+}
+.textTela{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(120, 138, 241, 0.295);
+    border-radius: 10px;
+    border-top:1px solid  rgba(116, 114, 245, 0.938) ;
+    border-bottom:1px solid  rgba(116, 114, 245, 0.938) ;
+    
+    
+}.bola{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-image: url('iconr.png');
+    margin-bottom: 10px;
+
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    flex: 1;
+    
+    padding: 20px;
+    text-align: center;
+    
+    color: #3232CD;
+    margin: 20px;
+}
+.espacofinal{
+    width:100%;
+    height: 200px;
+  
+}
+.cabecalhofinal{
+    width: 100%;
+    background-color: #3232CD;
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.partefinal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('images.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+   
+}
+.final{
+  
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    color:#3232CD;
+    margin: 20px;
+    border-radius: 11px;
+    width: 500px;
+
+}
+.final p{
+    color: #7979e7;
+}
+.final h1{
     font-size: 25px;
+}
+footer{
+    background-color: #3232CD;
+    display: flex;
+}
+.footerLeft{
+    color: white;
+width: 50%;
+border-right: 1px solid white;
+height: 400px;
+padding: 20px;
+}
+
+.footerRigth{
+    width: 50%;
+    color: white;
+    height: 400px;
+    padding: 20px;
+	display: flex;
+	text-align:center;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding:20px;
+}
+
+.edit{
+	font-size:10px;
+	color:white;
+	text-align:center;
+	background-color:#3232CD;
+	
+	
+}
+.and_btn{
+	  border: none;
+	outline: none;
+	width:70px;
+		height:50px;
+		background-color:green;
+		color:white;
+		font-size:20px;
+		border-radius:10px;
+		margin-top:30px;
+		
+}
+
+
+[data-anime]{
+
+    opacity: 0;
+    transition: 1s;
+}
+[data-anime="left"]{
+    transform: translate3d(-50px,0,0);
+}
+[data-anime="rigth"]{
+    transform: translate3d(50px,0,0);
+}
+[data-anime].animate {
+opacity: 1;
+transform:translate3d(0px,0px,0px) ;
 }
